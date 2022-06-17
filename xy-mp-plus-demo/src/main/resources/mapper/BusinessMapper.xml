@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xy.test.dao.BusinessMapper">
+    <sql id="tableName">
+        t_business
+    </sql>
+
+    <sql id="baseColumn">
+        id,create_time,update_time,name,biz_id,avatar,db_name,db_ip,db_port,db_user,db_password,desc,is_tenant,company_id,data_version,product_id,instance_id,pubbic_key,private_key,is_node_version
+    </sql>
+
+    <select id="selectAllList" resultType="com.xy.test.model.Business">
+        select
+        <include refid="baseColumn"/>
+        from
+        <include refid="tableName"/>
+    </select>
+
+</mapper>
