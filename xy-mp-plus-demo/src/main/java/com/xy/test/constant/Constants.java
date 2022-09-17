@@ -5,6 +5,6 @@ package com.xy.test.constant;
  * @date 2022-04-08
  */
 public interface Constants {
-    String BIZ_ID_HEADER = "zhuiyi-business-id";
+    String BIZ_ID_HEADER = "business-id";
 
 }
